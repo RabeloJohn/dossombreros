@@ -1,14 +1,14 @@
 import { useHistory } from 'react-router-dom'
-import NewMeetupForm from '../components/meetups/NewMeetupForm'
+import InsertContactUs from '../components/pagesaux/ContactUsTemplate'
 
-function NewMeetupPage() {
+function ContactUs() {
   const history = useHistory()
-  function addMeetupHandler(meetupData) {
+  function addContactUsHandler(ContactUsData) {
     fetch(
-      'https://react-get-started-f9d93-default-rtdb.firebaseio.com/meetups.json',
+      'https://dos-sombreros-default-rtdb.firebaseio.com/userrequests.json',
       {
         method: 'POST',
-        body: JSON.stringify(meetupData),
+        body: JSON.stringify(ContactUsData),
         headers: {
           'Content-Type': 'application/json',
         },
@@ -23,9 +23,9 @@ function NewMeetupPage() {
       <h1>
         Get in touch with us! <br></br>We'd love to hear from you.
       </h1>
-      <NewMeetupForm onAddMeetup={addMeetupHandler} />
+      <InsertContactUs onAddContactUs={addContactUsHandler} />
     </section>
   )
 }
 
-export default NewMeetupPage
+export default ContactUs

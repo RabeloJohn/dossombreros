@@ -1,6 +1,6 @@
-import classes from './Favorites.module.css'
+import classes from './AboutUs.module.css'
 
-function FavoritesPage() {
+function AboutUs() {
   return (
     <div>
       <img
@@ -29,4 +29,4 @@ function FavoritesPage() {
   )
 }
 
-export default FavoritesPage
+export default AboutUs

@@ -1,12 +1,12 @@
 import { useRef } from 'react'
 
 import Card from '../ui/Card'
-import classes from './NewMeetupForm.module.css'
+import classes from './ContactUsTemplate.module.css'
 
-function NewMeetupForm(props) {
+function InsertContactUs(props) {
   const titleInputRef = useRef()
   const imageInputRef = useRef()
-  const addressInputRef = useRef()
+  const detailInputRef = useRef()
   const descriptionInputRef = useRef()
 
   function submitHandler(event) {
@@ -14,17 +14,17 @@ function NewMeetupForm(props) {
 
     const enteredTitle = titleInputRef.current.value
     const enteredImage = imageInputRef.current.value
-    const enteredAddress = addressInputRef.current.value
+    const enteredDetail = detailInputRef.current.value
     const enteredDescription = descriptionInputRef.current.value
 
-    const meetupData = {
+    const EspData = {
       title: enteredTitle,
       image: enteredImage,
-      address: enteredAddress,
+      address: enteredDetail,
       description: enteredDescription,
     }
 
-    props.onAddMeetup(meetupData)
+    props.onAddContactUs(EspData)
   }
 
   return (
@@ -39,8 +39,8 @@ function NewMeetupForm(props) {
           <input type='email' required id='image' ref={imageInputRef} />
         </div>
         <div className={classes.control}>
-          <label htmlFor='address'>Subject</label>
-          <input type='text' required id='address' ref={addressInputRef} />
+          <label htmlFor='detail'>Subject</label>
+          <input type='text' required id='detail' ref={detailInputRef} />
         </div>
         <div className={classes.control}>
           <label htmlFor='description'>Your message</label>
@@ -59,4 +59,4 @@ function NewMeetupForm(props) {
   )
 }
 
-export default NewMeetupForm
+export default InsertContactUs

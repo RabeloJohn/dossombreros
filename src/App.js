@@ -1,8 +1,8 @@
 import { Route, Switch } from 'react-router-dom'
 
-import AllMeetupsPage from './pages/AllMeetups'
-import NewMeetupPage from './pages/NewMeetup'
-import FavoritesPage from './pages/Favorites'
+import Especialidades from './pages/OptEspecialidades'
+import ContactUs from './pages/OptContact'
+import AboutUs from './pages/OptAbout'
 import Layout from './components/layout/Layout'
 import Modal from './components/Modal'
 
@@ -11,13 +11,13 @@ function App() {
     <Layout>
       <Switch>
         <Route path='/' exact>
-          <AllMeetupsPage />
+          <Especialidades />
         </Route>
         <Route path='/contact-us'>
-          <NewMeetupPage />
+          <ContactUs />
         </Route>
         <Route path='/about-us'>
-          <FavoritesPage />
+          <AboutUs />
         </Route>
         <Route path='/modal'>
           <Modal />

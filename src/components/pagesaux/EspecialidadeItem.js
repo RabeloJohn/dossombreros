@@ -1,7 +1,7 @@
 import Card from '../ui/Card'
-import classes from './MeetupItem.module.css'
+import classes from './EspecialidadeItem.module.css'
 
-function MeetupItem(props) {
+function EspecialidadesItem(props) {
   return (
     <li className={classes.item}>
       <Card>
@@ -10,7 +10,7 @@ function MeetupItem(props) {
         </div>
         <div className={classes.content}>
           <h3>{props.title}</h3>
-          <address>{props.address}</address>
+          <address>{props.detailinfo}</address>
           <p>{props.description}</p>
         </div>
       </Card>
@@ -18,4 +18,4 @@ function MeetupItem(props) {
   )
 }
 
-export default MeetupItem
+export default EspecialidadesItem
