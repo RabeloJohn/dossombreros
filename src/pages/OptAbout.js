@@ -6,8 +6,7 @@ function AboutUs() {
       <img
         src='http://dossombreros.co.uk/core/wp-content/uploads/2014/07/mexican-tequila-cocktail-bar-brighton.jpg'
         alt='About'
-        width='640'
-        max-width='100%'
+        width='auto'
         height='auto'
       />
       <br />
