@@ -5,7 +5,7 @@ function AboutUs() {
   return (
     <div>
       <img
-        src='http://dossombreros.co.uk/core/wp-content/uploads/2014/07/mexican-tequila-cocktail-bar-brighton.jpg'
+        src='https://www.alfresco-brighton.co.uk/wp-content/uploads/Dos-Sombreros-11-640x362.jpg'
         alt='About'
         width='auto'
         height='auto'
