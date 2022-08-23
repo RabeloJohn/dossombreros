@@ -1,5 +1,4 @@
 import classes from './AboutUs.module.css'
-import Card from '../components/ui/Card'
 
 function AboutUs() {
   return (
@@ -7,8 +6,6 @@ function AboutUs() {
       <img
         src='https://www.alfresco-brighton.co.uk/wp-content/uploads/Dos-Sombreros-11-640x362.jpg'
         alt='About'
-        width='auto'
-        height='auto'
       />
 
       <br />
