@@ -6,6 +6,7 @@ function AboutUs() {
       <img
         src='https://www.alfresco-brighton.co.uk/wp-content/uploads/Dos-Sombreros-11-640x362.jpg'
         alt='About'
+        width='640'
       />
 
       <br />
