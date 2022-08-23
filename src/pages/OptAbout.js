@@ -1,14 +1,17 @@
 import classes from './AboutUs.module.css'
+import Card from '../components/ui/Card'
 
 function AboutUs() {
   return (
     <div>
-      <img
-        src='http://dossombreros.co.uk/core/wp-content/uploads/2014/07/mexican-tequila-cocktail-bar-brighton.jpg'
-        alt='About'
-        width='auto'
-        height='auto'
-      />
+      <Card>
+        <img
+          src='http://dossombreros.co.uk/core/wp-content/uploads/2014/07/mexican-tequila-cocktail-bar-brighton.jpg'
+          alt='About'
+          width='auto'
+          height='auto'
+        />
+      </Card>
       <br />
       <p className={classes.header}>
         <br />
